@@ -1,0 +1,332 @@
+/* --- CSS Resets --- */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+	font-family: 'Fira Sans', Fira Sans OT, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.5em;
+
+	background-color: #fff;
+	color: #667;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'brandon-grotesque', Brandon Grotesque, Fira Sans OT, Arial, sans-serif;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+h1 {
+	font-size: 4em;
+	font-weight: 300;
+}
+h2 {
+	line-height: 1.5em;
+}
+h3 {
+	line-height: 1.5em;
+}
+p {
+	font-size: 1em;
+	line-height: 1.6em;
+	max-width: 35em;
+	margin-bottom: 20px;
+	color: #737f8e;
+}
+a {
+	color: #63add8;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0.05);
+}
+a:hover, a:focus {
+	color: #518faf;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+hr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+
+/* --- utilities --- */
+.u-inlineblock {
+	display: inline-block;
+}
+.u-floatleft {
+	display: inline-block;
+	float: left;
+}
+.u-floatright {
+	display: inline-block;
+	float: right;
+}
+.u-aligncenter {
+	text-align: center;
+}
+.u-alignleft {
+	text-align: left;
+}
+.u-alignright {
+	text-align: right;
+}
+.u-mt5 {
+	margin-top: 5px;
+}
+.u-ml5 {
+	margin-left: 5px;
+}
+.u-mr5 {
+	margin-right: 5px;
+}
+.u-mb5 {
+	margin-bottom: 5px;
+}
+.u-mt10 {
+	margin-top: 10px;
+}
+.u-ml10 {
+	margin-left: 10px;
+}
+.u-mr10 {
+	margin-right: 10px;
+}
+.u-mb10 {
+	margin-bottom: 10px;
+}
+.u-mv10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.u-mt20 {
+	margin-top: 20px;
+}
+.u-mv20 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.u-mb40 {
+	margin-bottom: 40px;
+}
+.u-pv20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.u-pv40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.u-pv80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+
+/* --- colors --- */
+.c-baseBlueLight {
+	color: #ebecef;
+}
+.c-baseBlue20 {
+	color: #d7dbdf;
+}
+.c-baseBlue30 {
+	color: #c3c8ce;
+}
+.c-baseBlueMedium {
+	color: #9ba4ae;
+}
+.c-baseBlue70 {
+	color: #737f8e;
+}
+.c-baseBlueDark {
+	color: #37495e;
+}
+.c-oefenwebTheme {
+	color: #63add8;
+}
+.bg-baseBlueLight {
+	background-color: #ebecef;
+}
+.bg-baseBlue20 {
+	background-color: #d7dbdf;
+}
+.bg-baseBlue30 {
+	background-color: #c3c8ce;
+}
+.bg-baseBlueMedium {
+	background-color: #9ba4ae;
+}
+.bg-baseBlue70 {
+	background-color: #737f8e;
+}
+.bg-baseBlueDark {
+	background-color: #37495e;
+}
+.bg-oefenwebTheme {
+	background-color: #63add8;
+}
+
+
+
+/* --- icons (extends SS Pika) --- */
+.icon {
+	position: relative;
+	top: 0.15em;
+	line-height: 2em;
+}
+.icon-05x {
+	font-size: 0.5em;
+}
+.icon-075x {
+	font-size: 0.75em;
+}
+.icon-1x {
+	font-size: 1em;
+}
+.icon-15x {
+	font-size: 1.5em;
+}
+.icon-2x {
+	font-size: 2em;
+}
+.icon-3x {
+	font-size: 3em;
+}
+.icon-4x {
+	font-size: 4em;
+}
+
+
+
+/* --- button --- */
+.btn {
+	display: inline-block;
+	background-color: #737f8e;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	line-height: 30px;
+	border-color: transparent;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.btn:hover,
+.btn:focus {
+	background-color: #99a;
+	color: #fff;
+}
+.btn-primary {
+	background-color: #63add8;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: #308abf;
+	border-color: transparent;
+}
+.btn-primary:active {
+	background-color: #2978a6;
+}
+.btn-secondary {
+	background-color: #44a1e0;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+	background-color: #4390c0;
+}
+.btn-white {
+	background-color: #fff;
+	color: #44a1e0;
+}
+.btn-white:hover,
+.btn-white:focus {
+	background-color: #eee;
+}
+
+
+
+/* --- grid system --- */
+.row {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+/* --- nav --- */
+nav {
+}
+nav ul {;
+	margin-right: 20px;
+	padding-top: 20px;
+	list-style: none;
+}
+nav a {
+	display: block;
+	padding: 5px 0;
+	font-weight: 500;
+	/*border-bottom: 1px solid #eee;*/
+}
+nav .secondary {
+	margin-left: 20px;
+}
+nav .secondary a {
+	padding: 3px 0;
+	font-weight: normal;
+}
+
+
+
+/* --- title links --- */
+h2 {
+	margin-top: 40px;
+	position: relative;
+}
+h2 .title-link {
+	position: absolute;
+	right: 100%;
+	margin-right: 10px;
+}
+
+
+
+/* --- header --- */
+header {
+	min-height: 200px;
+	padding: 80px 0;
+	background-color: #37495e;
+	color: #fff;
+}
+
+
+
+/* --- swatch element --- */
+.swatch-container {
+	white-space: nowrap;
+}
+.swatch {
+	display: block;
+	height: 100px;
+}
+
+
+
+/* --- footer --- */
+footer {
+	padding: 80px 0;
+	background-color: #d7dbdf;
+}
