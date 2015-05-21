@@ -52,7 +52,13 @@
 					<div class="col-xs-12">
 						<h1>Oefenweb Style Guide</h1>
 						<p>De Oefenweb Style Guide is een tool om de reproduceerbaarheid en consistentie van alle visuele uitingen mogelijk te maken. De beschreven punten zijn meer richtlijnen dan regels – bij twijfel of vragen kan je contact opnemen met
-						<a href="" class="email-link"><script>document.write('d'+'s'+'w'+'a'+'k'+'m'+'a'+'n'+'&'+'#'+'6'+'4'+';'+'o'+'e'+'f'+'e'+'n'+'w'+'e'+'b'+'&'+'#'+'4'+'6'+';'+'n'+'l');</script></a><noscript>[Turn on JavaScript to see the email address]</noscript>.</p>
+						<a href="" class="email-link">
+							<script>
+								$email = 'd'+'s'+'w'+'a'+'k'+'m'+'a'+'n'+'@'+'o'+'e'+'f'+'e'+'n'+'w'+'e'+'b'+'.'+'n'+'l';
+								document.write($email);
+								$('.email-link').attr('href', 'mailto:' + $email);
+							</script>
+						</a><noscript>[Turn on JavaScript to see the email address]</noscript>.</p>
 					</div>
 				</div>
 			</header>
@@ -72,12 +78,24 @@
 
 						<h2>Stijl</h2>
 						<h3>Uitdrukking</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend at tellus eget tristique. Nullam scelerisque euismod mi, vel suscipit risus efficitur id. Aenean sit amet nisi vel ipsum volutpat porttitor sed eget urna. Morbi dictum ac purus nec imperdiet. Etiam ac tempus nisl. Pellentesque arcu justo, <a href="http://www.oefenweb.nl" target="_blank">Inline text link</a> auctor ac odio ornare, dapibus congue ante. Phasellus tristique orci a fermentum ultricies. Maecenas faucibus bibendum magna. Pellentesque quis ornare quam.</p>
+						<p>Oefenweb is een spin-off bedrijf van de Universiteit van Amsterdam sinds 2009, en sinds 2013 heeft Cito een minderheidsbelang in Oefenweb. Hoewel het bedrijf een onafhankelijke partij is, zijn de banden met de acedemische wereld sterk aanwezig. Commerciële uitingen mogen direct zijn, maar belangrijk blijft de aandacht voor het academische en onderwijsperspectief.</p>
+
+						<big class="tagline u-pv20">Dit is Oefenweb. Wij maken webapplicaties voor adaptief onderwijs.</big>
+
+						<p><strong>keywords/voice words</strong>: adaptief, innovatief, webapplicaties, educatief, e-learning, spin-off, gamification</p>
+						<p><strong>Koppen/headlines</strong> zijn opgebouwd uit twee delen. Het belangrijkste onderdeel is de tagline, die de centrale boodschap van het medium uidraagt. Dit kan een boodschap zijn om een product te omschrijven, maar ook een centraal concept of een specifieke promotie-actie.</p>
 
 						<hr />
 
 						<h2>Logo</h2>
 						<img src="images/logo_oefenweb.png" alt="" class="u-inlineblock u-mv20" />
+
+						<p>Het Oefenweb logo bestaat uit een beeldmerk (symbool) en een woordmerk met payoff; in principe wordt het logo in volledige vorm gebruikt. Ook het gebruik van alleen het beeldmerk (symbool) wordt toegestaan.</p>
+						<p>Het logo heeft twee verschijningsvormen: de basisvorm, waarbij het beeldmerk naast het woordmerk is geplaatst; en een alternatieve variant als er weinig horizontale ruimte beschikbaar is, waarbij het woordmerk onder het beeldmerk komt te staan. Om het logo visuele ruimte te geven wordt een minimale afstand tot andere objecten te worden aangehouden: voor het basislogo de x-hoogte van een ‘e’, voor het alternatief de volledige hoogte van de ‘f’, en voor alleen het symbool 25% van de diameter van de cirkel.</p>
+
+						<img src="images/logo_oefenweb_spacing.png" alt="" class="u-inlineblock u-mv20" />
+
+						<img src="images/logo_oefenweb_ondark.png" alt="" class="u-inlineblock u-mv20" />
 
 						<hr />
 
@@ -99,7 +117,9 @@
 						</div>
 
 						<br />
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend at tellus eget tristique. Nullam scelerisque euismod mi, vel suscipit risus efficitur id. Aenean sit amet nisi vel ipsum volutpat porttitor sed eget urna. Morbi dictum ac purus nec imperdiet. Etiam ac tempus nisl. Pellentesque arcu justo, <a href="http://www.oefenweb.nl" target="_blank">Inline text link</a> auctor ac odio ornare, dapibus congue ante. Phasellus tristique orci a fermentum ultricies. Maecenas faucibus bibendum magna. Pellentesque quis ornare quam.</p>
+						<!-- <p>[info volgt]</p> -->
+						<a href="https://typekit.com/fonts/brandon-grotesque" target="_blank" class="btn btn-primary u-mr10 u-mb10">Brandon Grotesque (Typekit) <i class="icon ss-action"></i></a>
+						<a href="https://www.google.com/fonts/specimen/Fira+Sans" target="_blank" class="btn btn-primary u-mr10 u-mb10">Fira Sans (Google Fonts) <i class="icon ss-action"></i></a>
 
 						<hr />
 
@@ -179,11 +199,11 @@
 						<h4 class="u-mt20">Oefenweb thema kleuren</h4>
 
 						<div class="row">
-							<div class="col-md-2 col-sm-3 col-xs-4 u-mv10 swatch-container">
-								<div class="swatch bg-oefenwebTheme u-mb10">
+							<div class="col-md-3 col-xs-4 u-mv10 swatch-container">
+								<div class="swatch bg-oefenwebBlue u-mb10">
 								</div>
 								<small>
-								<i>oefenweb Theme</i><br />
+								<i>oefenweb Blue</i><br />
 								<small class="c-baseBlue30">HEX</small><br />
 								#63add8<br />
 								<small class="c-baseBlue30">RGB</small><br />
@@ -192,30 +212,178 @@
 							</div>
 						</div>
 
+						<h4 class="u-mt20">UI kleuren</h4>
+
+						<div class="row">
+							<div class="col-xs-3 u-mv10 swatch-container">
+								<div class="swatch bg-interactionBlue u-mb10">
+								</div>
+								<small>
+								<i>interaction Blue</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#3598db<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								53, 152, 219
+								</small>
+							</div>
+							<div class="col-xs-3 u-mv10 swatch-container">
+								<div class="swatch bg-correctGreen u-mb10">
+								</div>
+								<small>
+								<i>correct Green</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#2ecd71<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								46, 205, 113
+								</small>
+							</div>
+							<div class="col-xs-3 u-mv10 swatch-container">
+								<div class="swatch bg-wrongRed u-mb10">
+								</div>
+								<small>
+								<i>wrong Red</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#e84c3d<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								232, 76, 61
+								</small>
+							</div>
+							<div class="col-xs-3 u-mv10 swatch-container">
+								<div class="swatch bg-moneyYellow u-mb10">
+								</div>
+								<small>
+								<i>money Yellow</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#f1c40f<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								241, 196, 15
+								</small>
+							</div>
+						</div>
+
 						<hr />
 
 						<h2>Icons</h2>
+
 						<img src="images/pika.png" alt="" class="u-mv20 u-mb40" />
 						<p>Voor iconen wordt de iconset <strong>SS Pika</strong> gebruikt; een uitgebreide set van 504 iconen in verschillende categorieen en een duidelijke stijl. Deze iconen zijn beschikbaar als icon font voor gebruik in websites, of als png afbeeldingen voor gebruik op andere plekken.</p>
-						<a href="documentation.html" class="btn btn-primary"><i class="icon ss-thumbnails"></i> Bekijk het iconen overzicht</a>
+						<a href="documentation.html" class="btn btn-primary u-mr10 u-mb10"><i class="icon ss-thumbnails"></i> Bekijk het iconen overzicht</a>
+            <a href="javascript:void(0)" class="btn btn-disabled u-mb10"><i class="icon ss-download"></i> Download alle iconen als png (binnenkort)</a>
+
+						<hr />
 
 						<h2>Layout</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend at tellus eget tristique. Nullam scelerisque euismod mi, vel suscipit risus efficitur id. Aenean sit amet nisi vel ipsum volutpat porttitor sed eget urna. Morbi dictum ac purus nec imperdiet. Etiam ac tempus nisl. Pellentesque arcu justo, <a href="http://www.oefenweb.nl" target="_blank">Inline text link</a> auctor ac odio ornare, dapibus congue ante. Phasellus tristique orci a fermentum ultricies. Maecenas faucibus bibendum magna. Pellentesque quis ornare quam.</p>
+
+						<p>Als een opmaak veel elementen of een heldere organisatie nodig heeft, kan gebruik gemaakt worden van het onderstaande gridsysteem. Dit is gebaseerd op 12 kolommen met een modulemaat van 6% en een marge van 2.5% in de breedte. Dit systeem komt voort uit het front-end framework Bootstrap (3.0); gebruik is niet verplicht maar dient als leidraad.</p>
+
+						<img src="images/gridsystem.png" alt="" class="u-inlineblock u-mv20" />
+
+						<hr />
 
 						<h2>Illustraties</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend at tellus eget tristique. Nullam scelerisque euismod mi, vel suscipit risus efficitur id. Aenean sit amet nisi vel ipsum volutpat porttitor sed eget urna. Morbi dictum ac purus nec imperdiet. Etiam ac tempus nisl. Pellentesque arcu justo, <a href="http://www.oefenweb.nl" target="_blank">Inline text link</a> auctor ac odio ornare, dapibus congue ante. Phasellus tristique orci a fermentum ultricies. Maecenas faucibus bibendum magna. Pellentesque quis ornare quam.</p>
+						<p>[volgt]</p>
+
+						<hr />
 
 						<h2>Rekentuin</h2>
+
 						<h3>Logo</h3>
+						<img src="images/logo_rekentuin.png" alt="" class="u-inlineblock u-mv20" />
+						<img src="images/logo_mathgarden.png" alt="" class="u-inlineblock u-mv20" />
+						<img src="images/logo_matematikhaven.png" alt="" class="u-inlineblock u-mv20" />
+
 						<h3>Kleurenpalet</h3>
+
+						<div class="row">
+							<div class="col-md-3 col-xs-4 u-mv10 swatch-container">
+								<div class="swatch bg-rekentuinGreen u-mb10">
+								</div>
+								<small>
+								<i>Rekentuin Green</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#56bd8a<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								86, 189, 138
+								</small>
+							</div>
+							<div class="col-md-3 col-xs-4 u-mv10 swatch-container">
+								<div class="swatch bg-rekentuinGreenDark u-mb10">
+								</div>
+								<small>
+								<i>Rekentuin Green Dark</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#3e8a64<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								62, 138, 100
+								</small>
+							</div>
+						</div>
+
+						<hr />
 
 						<h2>Taalzee</h2>
+
 						<h3>Logo</h3>
+						<img src="images/logo_taalzee.png" alt="" class="u-inlineblock u-mv20" />
 						<h3>Kleurenpalet</h3>
 
+						<div class="row">
+							<div class="col-md-3 col-xs-4 u-mv10 swatch-container">
+								<div class="swatch bg-taalzeeBlue u-mb10">
+								</div>
+								<small>
+								<i>Taalzee Blue</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#4fbed1<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								79, 190, 209
+								</small>
+							</div>
+							<div class="col-md-3 col-xs-4 u-mv10 swatch-container">
+								<div class="swatch bg-taalzeeBlueDark u-mb10">
+								</div>
+								<small>
+								<i>Taalzee Blue Dark</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#3c8f9e<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								60, 143, 158
+								</small>
+							</div>
+						</div>
+
+						<hr />
+
 						<h2>Words&amp;Birds</h2>
+
 						<h3>Logo</h3>
+						<img src="images/logo_wordsandbirds.png" alt="" class="u-inlineblock u-mv20" />
 						<h3>Kleurenpalet</h3>
+
+						<div class="row">
+							<div class="col-md-3 col-xs-4 u-mv10 swatch-container">
+								<div class="swatch bg-wnbPurple u-mb10">
+								</div>
+								<small>
+								<i>Words&Birds Purple</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#4fbed1<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								79, 190, 209
+								</small>
+							</div>
+							<div class="col-md-3 col-xs-4 u-mv10 swatch-container">
+								<div class="swatch bg-wnbPurpleDark u-mb10">
+								</div>
+								<small>
+								<i>Words&Birds Purple Dark</i><br />
+								<small class="c-baseBlue30">HEX</small><br />
+								#3c8f9e<br />
+								<small class="c-baseBlue30">RGB</small><br />
+								60, 143, 158
+								</small>
+							</div>
+						</div>
 
 					</div>
 				</div>
