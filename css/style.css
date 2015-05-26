@@ -129,12 +129,30 @@ big.tagline:before {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.u-mt10 {
+	margin-top: 10px;
+}
 .u-mt20 {
 	margin-top: 20px;
+}
+.u-mt40 {
+	margin-top: 40px;
 }
 .u-mv20 {
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+.u-mh10 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.u-mh20 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.u-mh40 {
+	margin-left: 40px;
+	margin-right: 40px;
 }
 .u-mb40 {
 	margin-bottom: 40px;
