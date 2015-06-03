@@ -61,7 +61,8 @@ function scrollActions() {
   if ($(window).width() > 768 && $('#sticky-menu').length > 0 && $('#content').length > 0) {
     $("#sticky-menu").stick_in_parent({
       parent: "#content",
-      bottoming: true
+      bottoming: true,
+      recalc_every: 1
     });
   } else {
     $("#sticky-menu").trigger("sticky_kit:detach");
