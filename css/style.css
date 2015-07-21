@@ -43,6 +43,11 @@ p {
 	margin-bottom: 20px;
 	color: #737f8e;
 }
+main ul, ol {
+	line-height: 1.6em;
+	color: #737f8e;
+	margin-bottom: 20px;
+}
 a {
 	color: #63add8;
 	text-decoration: none;
@@ -403,6 +408,11 @@ h2 .title-link {
 	position: absolute;
 	right: 100%;
 	margin-right: 10px;
+}
+h3 .title-link {
+	position: absolute;
+	right: 100%;
+	margin-right: -5px;
 }
 
 

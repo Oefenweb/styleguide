@@ -5,7 +5,11 @@ $(document).ready(function() {
   scrollActions();
 
   // initiating smooth scroll plugin
-  $('a[href^="#"]').smoothScroll();
+  $('a[href^="#"]').smoothScroll({
+    afterScroll: function() {
+      window.location.hash = $(this).attr('href');
+    },
+  });
 
 });
 
