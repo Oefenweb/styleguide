@@ -127,8 +127,14 @@ big.tagline:before {
 .u-mr10 {
 	margin-right: 10px;
 }
+.u-mb0 {
+	margin-bottom: 0;
+}
 .u-mb10 {
 	margin-bottom: 10px;
+}
+.u-mb20 {
+	margin-bottom: 20px;
 }
 .u-mv10 {
 	margin-top: 10px;
@@ -331,6 +337,9 @@ big.tagline:before {
 	background-color: #99a;
 	color: #fff;
 }
+.btn-sm {
+	line-height: 20px;
+}
 .btn-primary {
 	background-color: #63add8;
 }
@@ -356,6 +365,16 @@ big.tagline:before {
 .btn-white:hover,
 .btn-white:focus {
 	background-color: #eee;
+}
+.btn-primary-outline {
+	background-color: transparent;
+	border: 1px solid #63add8;
+	color: #63add8;
+}
+.btn-primary-outline:hover,
+.btn-primary-outline:focus {
+	background-color: #63add8;
+	color: #fff;
 }
 .btn-disabled {
   background-color: #c3c8ce;
