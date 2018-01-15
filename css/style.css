@@ -8,11 +8,12 @@ body, html {
 	height: 100%;
 
 	font-family: 'Fira Sans', Fira Sans OT, Arial, sans-serif;
-	font-size: 100%;
+	font-size: 16px;
 	line-height: 1.5em;
+	font-weight: 400;
 
 	background-color: #fff;
-	color: #667;
+	color: #737f8e;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -22,18 +23,29 @@ body, html {
 	box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
+	/*
+	font-family: 'Fira Sans', Fira Sans OT, Arial, sans-serif;
 	font-family: 'brandon-grotesque', Brandon Grotesque, Fira Sans OT, Arial, sans-serif;
-	font-weight: bold;
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Signika', sans-serif;
+	font-family: 'Asap', sans-serif;
+	*/
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
 	margin-bottom: 0.5em;
+	color: #37495e;
 }
 h1 {
 	font-size: 4em;
-	font-weight: 300;
+	font-weight: 600;
+	letter-spacing: 1px;
 }
 h2 {
+	font-size: 1.8em;
 	line-height: 1.5em;
 }
-h3 {
+h3,h4 {
+	font-size: 1.4em;
 	line-height: 1.5em;
 }
 p {
@@ -64,23 +76,27 @@ hr {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-big.tagline {
-	display: inline-block;
+blockquote {
+	font-size: 1.7em;
+	line-height: 1em;
 	padding-right: 50px;
-	font-size: 1.5em;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	font-family: 'Signika', sans-serif;
+	font-weight: 300;
 }
-big.tagline:before {
-	content: '“';
-	display: inline-block;
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	font-size: 2em;
-	font-family: "SSPika";
-	color: #ebecef;
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
+blockquote::before {
+    content: '“';
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-family: "SSPika";
+    color: #ebecef;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 
